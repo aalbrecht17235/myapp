@@ -1,3 +1,6 @@
-<h1>Hello World</h1>
-
+<h1>{{title | truncate}}</h1>
+<h1>{{jsonValue | json}}</h1>
+<h1>{{newDate | date:'shortDate'}}</h1>
+<button (click)="handleEvent()">Click</button>
+<input [(ngModel)]="title" type="text" placeholder="Hello"/>
 <!-- <router-outlet></router-outlet> -->

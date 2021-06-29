@@ -1,6 +1,6 @@
-<h1>{{title | truncate}}</h1>
-<h1>{{jsonValue | json}}</h1>
-<h1>{{newDate | date:'shortDate'}}</h1>
-<button (click)="handleEvent()">Click</button>
-<input [(ngModel)]="title" type="text" placeholder="Hello"/>
+<input type="text" [(ngModel)]="user.name">
+<input type="text" [(ngModel)]="user.age">
+<input type="text" [(ngModel)]="user.id">
+
+<app-user [user] = "user" (userEvent)="handleEvent($event)"></app-user>
 <!-- <router-outlet></router-outlet> -->
